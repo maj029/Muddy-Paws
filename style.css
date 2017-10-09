@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    color: teal;
+    }
+
+img {
+    width: 100%;
+    height: auto;
+    }
+
+/*********** HEADER ************/
+
+<div style="text-align: center;"><IMG SRC="MUDDY_HEADER-LOGO.jpg" ALT="Muddy Paws LOGO"></div>
+
+/*********** FORMATTING ************/
+
+
+
+header {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    }
+
+header a {
+    color: gold;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 19px;
+    }
+
+h1 {
+    margin: 0;
+    }
+
+h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    color: grey;
+    width: 900px; margin: 20px; padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    }
+
+h3 {  /*********** The smae as h2, only left alighed. I tried to utilize h2 by writing align="center" in the html file, but it didn't work ************/
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    width: 400px; margin: 20px; padding: 20px;
+    font-size: 30px;
+    text-align: left;
+    }
+
+h4 {  /*********** The smae as h2, only left alighed. I tried to utilize h2 by writing align="center" in the html file, but it didn't work ************/
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    width: 400px; margin: 20px; padding: 20px;
+    font-size: 20px;
+    text-align: left;
+    }
+
+h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    color: grey;
+    width: 400px; margin: 20px; padding: 20px;
+    font-size: 72px;
+    text-align: left;
+    }
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: grey;
+    width: 900px; margin: 20px; padding: 20px;
+    font-size: 16px;
+    text-align: left;
+    }
+
+
+/*********** CSS GRID - INLINE BLOCK ************/
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+    }
+.container2 {
+    width: 80%;
+    margin: 20px; padding: 20px;
+    font-size: 0;
+    text-align: left;
+    }
+.grid-item, .grid-item-large {
+    width: 550px;
+    height: 350px;
+    display: inline-block;
+    margin: 4px;
+    font-size: 1rem;
+    vertical-align: top;
+    }
+
+.grid-item-large {
+    height: 1100px;
+    }
+
+.orderButton {
+    width: 445px;
+    height: 350px;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    padding-right: 45px;
+    font-size: 1rem;
+    }
+
+
+/*********** CSS GRID - INLINE BLOCK - HOME ************/
+
+.dog {
+    background-color: darkgreen;
+    }
+.cat {
+    background-color: tomato;
+    }
+
+/*********** CSS GRID - INLINE BLOCK - DOG ************/
+
+.harness {
+    background-color: blue;
+    }
+.storage {
+    background-color: orange;
+    }
+.collar {
+    background-color: pink;
+    }
+
+/*********** CSS GRID - INLINE BLOCK - PRODUCT ************/
+
+h6 {        /*********** text for sizes ************/
+    font-family: 'Nunito Sans', sans-serif;
+    color: grey;
+    width: 180px; margin: 5px; padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-align: middle;
+    }
+
+.productPic {
+    background-color: tomato;
+    height: 660px;
+    }
+
+.grid-item-price {
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+    margin: 10px;
+    }
+
+.price-sales {
+    font-family: 'Nunito Sans', bold;
+    color: grey;
+    width: 100px;
+    margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 40px;
+    text-align: left;
+    }
+
+.price-description {
+    font-family: 'Nunito Sans', bold;
+    color: grey;
+    margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-align: left;
+    }
+
+
