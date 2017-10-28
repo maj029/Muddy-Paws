@@ -16,7 +16,7 @@ img {
 
 /*********** FORMATTING ************/
 
-/******* STYLE GUIDE *******/
+/*********** HEADERS ************/
 
 header {
     font-family: 'Nunito Sans', sans-serif;
@@ -27,10 +27,10 @@ header {
     }
 
 header a {
-    color: black;
+    color: gold;
     text-decoration: none;
     padding: 20px;
-    font-size: 24px;
+    font-size: 19px;
     }
 
 h1 {
@@ -41,7 +41,7 @@ h2 {
     font-family: 'Nunito Sans', sans-serif;
     color: white;
     width: 1000px; margin: 20px; padding: 20px;
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
     }
 
@@ -55,7 +55,7 @@ h3 {  /*********** The smae as h2, only left alighed. I tried to utilize h2 by w
 
 h4 {  /*********** The smae as h2, only left alighed. I tried to utilize h2 by writing align="center" in the html file, but it didn't work ************/
     font-family: 'Nunito Sans', sans-serif;
-    color: white;
+    color: grey;
     width: 1000px; margin: 20px; padding: 20px;
     font-size: 20px;
     text-align: left;
@@ -69,7 +69,8 @@ h5 {  /*********** The smae as h3, only the text is Black ************/
     text-align: left;
     }
 
-h6 {
+
+h6 {/***********DOG ACCESSORY Blocks***********/
     font-family: 'Nunito Sans', bold;
     color: black;
     width: 260px; margin: 10px; padding: 10px;
@@ -77,18 +78,9 @@ h6 {
     text-align: left;
     }
 
-a {
-    text-decoration: none;
-    color: white;
-}
 
-a:hover {
-    cursor: pointer;
-}
 
-a.active {
-    text-decoration: underline;
-}
+/*********** Paragraphing ************/
 
 p {
     font-family: 'Nunito Sans', sans-serif;
@@ -98,55 +90,6 @@ p {
     text-align: left;
     }
 
-/***********NAVIGATION STYLING***********/
-
-nav ul,
-nav ul li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-    letter-spacing: 1px
-}
-
-nav ul {
-    display:flex;
-    align-items: center;
-}
-
-nav ul li {
-    margin-right: 40px;
-}
-
-/* logo */
-nav ul li:first-child img{
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 150px;
-}
-
-/* hover states */
-nav a:hover, .back-bar a:hover {
-    text-decoration: underline;
-    opacity: 0.7;
-}
-
-
-
-/*********** Styling sections and divs etc. ************/
-
-.header{
-    background-color: rgb(255,255,255);
-}
-
-.foo{
-    margin-bottom: 6em;
-  }
-
-.foo2{
-    margin-bottom: 2em;
-}
 
 /*********** CSS GRID - INLINE BLOCK ************/
 
@@ -180,14 +123,15 @@ nav a:hover, .back-bar a:hover {
     height: 250px;
     }
 
-.grid-box {
+  .grid-box {
     width: 200px;
     height: 200px;
     display: inline-block;
     margin: 4px;
     font-size: 1rem;
     vertical-align: top;
-    }
+  }
+
 
 .orderButton {
     width: 445px;
@@ -222,38 +166,12 @@ nav a:hover, .back-bar a:hover {
     height: 660px;
     }
 
-.thumbnails {
-    display: inline-block;
-    height: 129px;
-    width: 554px;
-    margin: 30px 10px;
-    border: grey 1px solid;
-}
-
-.grid-item-button {
-    width: 194px;
-    height: 54px;
-    border-radius:9px;
-    border:3px solid #dcdcdc;
+.grid-item-price {
+    width: 200px;
+    height: 60px;
     display: inline-block;
     margin: 10px;
-    cursor:pointer;
     }
-
-.grid-item-button:hover {
-  background: white;
-}
-
-.add{
-    width: 100px;
-    height: 30px;
-
-}
-
-.grid-item-button.active, .grid-item-button:active {
-    background: blue;
-    text-decoration: none;
-}
 
 .price-sales {
     font-family: 'Nunito Sans', bold;
@@ -302,137 +220,4 @@ nav a:hover, .back-bar a:hover {
 .tags {
     background-color: gold;
     }
-.check {
-    width: 120px;
-    height: 54px;
-    background-color: gold;
-}
 
-
-/*********** PICTURE DETAIL PANEL ************/
-
-
-.product-images {
-    width: 500px;
-    position:relative;
-    display: inline-block;
-    float:left;
-    padding:10px;
-  }
-
-.display-image {
-    height: 419px;
-}
-
-/*********** SHOPPING CART PAGE ************/
-
-.cart{
-  text-align:right
-}
-
-.shopping-cart {
-  width: 800px;
-  height: 423px;
-  margin: 80px auto;
-  background: #FFFFFF;
-  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-}
-
-.title {
-  height: 60px;
-  border-bottom: 1px solid #E1E8EE;
-  padding: 20px 30px;
-  color: #5E6977;
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.item {
-  padding: 20px 30px;
-  height: 120px;
-  display: flex;
-}
-
-
-.image {
-  width:220px;
-  height: 100px;
-  margin: 10px;
-  margin-right: 50px;
-  object-fit: scale-down;
-}
-
-.description {
-  padding-top: 10px;
-  margin-right: 60px;
-  width: 200px;
-}
-
-.description span {
-  display: block;
-  font-size: 18px;
-  color: #43484D;
-  font-weight: 400;
-}
-
-.description span:first-child {
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-.description span:last-child {
-  font-weight: 300;
-  margin-top: 8px;
-  color: #86939E;
-}
-
-.quantity {
-  width: 120px;
-  padding-top: 20px;
-  margin-right: 30px;
-}
-.quantity input {
-  border: none;
-  text-align: center;
-  width: 32px;
-  font-size: 16px;
-  color: #43484D;
-  font-weight: 300;
-}
-
-button:focus,
-input:focus {
-  outline:0;
-}
-
-.total-price {
-  width: 83px;
-  padding-top: 27px;
-  text-align: center;
-  font-size: 20px;
-  color: #43484D;
-  font-weight: 300;
-}
-
-.buttons {
-  position: relative;
-  padding-top: 30px;
-  margin-right: 60px;
-}
-
-.delete-btn {
-  width: 18px;
-  height: 17px;
-  background: "delete_button.jpg"
-}
-
-.check-out {
-    width: 70px;
-    height: 30px;
-    border-radius:9px;
-    border:3px solid #dcdcdc;
-    margin: 10px;
-    cursor:pointer;
-    }
